@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form action="index.html" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <label for="nama">Nama</label><br>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="no_hp">No HP</label><br>
+        <input type="text" id="no_hp" name="no_hp"><br><br>
+
+        <label>Jenis Kelamin</label><br>
+        <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-Laki">
+        <label for="laki_laki">Laki-Laki</label><br>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label for="prodi">Prodi</label><br>
+        <select id="prodi" name="prodi">
+            <option value="Pilih">Pilih</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Manajemen">Manajemen</option>
+            <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+        </select><br><br>
+
+        <label>Hobi</label><br>
+        <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+        <label for="membaca">Membaca</label><br>
+        <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
+        <label for="menulis">Menulis</label><br>
+        <input type="checkbox" id="menyanyi" name="hobi[]" value="Menyanyi">
+        <label for="menyanyi">Menyanyi</label><br>
+        <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+        <label for="olahraga">Olahraga</label><br><br>
+
+        <label for="alamat">Alamat</label><br>
+        <textarea id="alamat" name="alamat" placeholder="Alamat Lengkap"></textarea><br><br>
+
+        <label for="foto">Foto Diri</label><br>
+        <input type="file" id="foto" name="foto"><br><br>
+
+        <input type="submit" value="Daftar">
+    </form>
+
+    <br>
+    <button onclick="window.location.href='index.html'">Kembali</button>
+    <script src="validateForm.js"></script>
+</body>
+</html>
