@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+#productList {
+    text-align: center; 
+}
+
+#productList li {
+    text-align: left; 
+}
+
+
+.button-container {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content:center;
+}
+
+.register-button,
+.login-button,
+.login-responsive-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.register-button:hover,
+.login-responsive-button:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+.productapi-button,
+.productapi-responsive-button {
+    padding: 10px 20px;
+    background-color: #c300a2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.productapi-button:hover,
+.productapi-responsive-button:hover {
+    background-color: #8e0076;
+    border-radius: 5px;
+}
+
+
+.jsdom-button, .jsdasar-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; 
+    background-color: #dbbe00; 
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.jsdom-button:hover, .jsdasar-button:hover {
+    background-color: #c0a600; 
+}
+
+button.goBackButton {
+    background-color:   #ff0000; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin-top: 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+button.goBackButton:hover {
+    background-color: #d10000; 
+}
+
+
+#carouselContainer {
+    position: relative;
+    width: 80%;
+    margin: 0 auto; 
+    overflow: hidden;
+    text-align: center; 
+}
+
+.carousel {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    display: none;
+    margin: 0 auto; 
+}
+
+img {
+    border-radius: 30%;
+    max-width: 100%;
+}
+
+#prevButton,
+#nextButton {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: #0079bae1;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#prevButton {
+    left: 350px; 
+}
+
+#nextButton {
+    right: 350px; 
+}
+
+
+
+

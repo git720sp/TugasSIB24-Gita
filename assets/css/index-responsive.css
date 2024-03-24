@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+#productList {
+    text-align: center; 
+}
+
+#productList li {
+    text-align: left; 
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus tombol responsif saat layar lebih kecil */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.register-button,
+.login-button,
+.login-responsive-button,
+.productapi-button,
+.productapi-responsive-button,
+.jsdom-button,
+.jsdasar-button,
+.goBackButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on buttons */
+.register-button:hover,
+.login-button:hover,
+.login-responsive-button:hover,
+.productapi-button:hover,
+.productapi-responsive-button:hover,
+.jsdom-button:hover,
+.jsdasar-button:hover,
+.goBackButton:hover {
+    background-color: #0056b3;
+}
+
+#carouselContainer {
+    position: relative;
+    width: 80%;
+    margin: 0 auto; 
+    overflow: hidden;
+    text-align: center; 
+}
+
+.carousel {
+    width: 100%; /* Mengisi lebar container carousel */
+    height: auto; /* Mengatur tinggi sesuai proporsi gambar */
+    object-fit: cover; 
+    display: none;
+    margin: 0 auto; 
+}
+
+img {
+    border-radius: 30%;
+    max-width: 100%;
+}
+
+#prevButton,
+#nextButton {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: #0079bae1;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#prevButton {
+    left: 10px; /* Menyesuaikan posisi button prev di layar kecil */
+}
+
+#nextButton {
+    right: 10px; /* Menyesuaikan posisi button next di layar kecil */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Mengubah orientasi tombol menjadi vertikal pada layar kecil */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #carouselContainer {
+        width: 100%; /* Mengisi lebar carousel pada layar sangat kecil */
+    }
+
+    .carousel {
+        width: 100%; /* Mengisi lebar carousel pada layar sangat kecil */
+    }
+}

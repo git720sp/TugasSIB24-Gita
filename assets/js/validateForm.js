@@ -15,3 +15,7 @@ function validateForm() {
                 return true;
             }
         }
+
+function goBack() {
+            window.history.back();
+        }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pendaftaran</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 </head>
 <body>
     <h2>Form Pendaftaran</h2>
-    <form action="index.html" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+    <form id="daftarForm" form action="index.html" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
         <label for="nama">Nama</label><br>
         <input type="text" id="nama" name="nama"><br><br>
 
@@ -52,7 +52,7 @@
     </form>
 
     <br>
-    <button onclick="window.location.href='index.html'">Kembali</button>
-    <script src="validateForm.js"></script>
+    <button class="goBackButton" onclick="goBack()">Kembali</button>
+    <script src="assets/js/validateForm.js"></script>
 </body>
 </html>
