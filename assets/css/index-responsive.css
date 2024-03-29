@@ -21,7 +21,7 @@ p {
 
 .button-container {
     display: flex;
-    flex-wrap: wrap; /* Membungkus tombol responsif saat layar lebih kecil */
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
@@ -32,8 +32,7 @@ p {
 .productapi-button,
 .productapi-responsive-button,
 .jsdom-button,
-.jsdasar-button,
-.goBackButton {
+.jsdasar-button {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -45,16 +44,33 @@ p {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect on buttons */
+
 .register-button:hover,
 .login-button:hover,
 .login-responsive-button:hover,
 .productapi-button:hover,
 .productapi-responsive-button:hover,
 .jsdom-button:hover,
-.jsdasar-button:hover,
-.goBackButton:hover {
+.jsdasar-button:hover {
     background-color: #0056b3;
+}
+
+button.goBackButton {
+    background-color:   #ff0000; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin-top: 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+button.goBackButton:hover {
+    background-color: #d10000; 
 }
 
 #carouselContainer {
@@ -66,8 +82,8 @@ p {
 }
 
 .carousel {
-    width: 100%; /* Mengisi lebar container carousel */
-    height: auto; /* Mengatur tinggi sesuai proporsi gambar */
+    width: 100%; 
+    height: auto; 
     object-fit: cover; 
     display: none;
     margin: 0 auto; 
@@ -91,27 +107,36 @@ img {
     cursor: pointer;
 }
 
+
 #prevButton {
-    left: 10px; /* Menyesuaikan posisi button prev di layar kecil */
+    left: 10px; 
 }
 
 #nextButton {
-    right: 10px; /* Menyesuaikan posisi button next di layar kecil */
+    right: 10px; 
 }
 
-/* Media queries for responsiveness */
+
 @media only screen and (max-width: 768px) {
     .button-container {
-        flex-direction: column; /* Mengubah orientasi tombol menjadi vertikal pada layar kecil */
+        flex-direction: column; 
+    }
+
+    #prevButton {
+        left: 1px; 
+    }
+
+    #nextButton {
+        right: 1px; 
     }
 }
 
 @media only screen and (max-width: 480px) {
     #carouselContainer {
-        width: 100%; /* Mengisi lebar carousel pada layar sangat kecil */
+        width: 100%; 
     }
 
     .carousel {
-        width: 100%; /* Mengisi lebar carousel pada layar sangat kecil */
+        width: 100%; 
     }
 }

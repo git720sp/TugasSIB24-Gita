@@ -55,7 +55,7 @@ button[type="submit"]:hover {
 }
 
 
-button {
+.goBackButton {
     background-color: #ff0000;
     color: #fff;
     padding: 10px 20px;
@@ -67,9 +67,10 @@ button {
     margin: auto;
 }
 
-button:hover {
+.goBackButton:hover {
     background-color: #d10000;
 }
+
 
 .alert {
     padding: 10px;

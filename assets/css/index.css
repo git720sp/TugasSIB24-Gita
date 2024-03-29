@@ -19,12 +19,30 @@ p {
     text-align: left; 
 }
 
-
-.button-container {
+.button1-container,
+.button3-container,
+.button3-container {
     display: flex;
     margin-top: 20px;
     text-align: center;
     justify-content:center;
+}
+
+.jsdom-button, .jsdasar-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; 
+    background-color: #dbbe00; 
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.jsdom-button:hover, .jsdasar-button:hover,
+.loginlayout-button:hover, .dashboard-button:hover {
+    background-color: #c0a600; 
 }
 
 .register-button,
@@ -50,7 +68,9 @@ p {
 }
 
 .productapi-button,
-.productapi-responsive-button {
+.productapi-responsive-button,
+.loginlayout-button,
+.dashboard-button {
     padding: 10px 20px;
     background-color: #c300a2;
     color: #fff;
@@ -64,25 +84,11 @@ p {
 }
 
 .productapi-button:hover,
-.productapi-responsive-button:hover {
+.productapi-responsive-button:hover,
+.loginlayout-button:hover,
+.dashboard-button:hover {
     background-color: #8e0076;
     border-radius: 5px;
-}
-
-
-.jsdom-button, .jsdasar-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px; 
-    background-color: #dbbe00; 
-    color: white; 
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.jsdom-button:hover, .jsdasar-button:hover {
-    background-color: #c0a600; 
 }
 
 button.goBackButton {
@@ -102,7 +108,6 @@ button.goBackButton {
 button.goBackButton:hover {
     background-color: #d10000; 
 }
-
 
 #carouselContainer {
     position: relative;
